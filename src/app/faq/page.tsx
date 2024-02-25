@@ -1,10 +1,8 @@
 import FAQItem from '@/components/FAQItem';
-import Link from 'next/link';
-import { FaFacebook } from "react-icons/fa";
 
 function FAQPage() {
   return (
-    <div>
+    <div className='mx-auto md:w-5/6 lg:w-4/6'>
       <div className='py-4'>
         <h1 className='text-7xl text-secondary-500 text-center font-bold'>Întrebări frecvente</h1>
         <hr className='bg-primary-0 m-1 h-1' />
@@ -16,7 +14,7 @@ function FAQPage() {
           .
         </p>
       </div>
-      <div className=''>
+      <div>
         <FAQItem question="Cine suntem noi?" answer="Voluntari ai Ligii Studenților din Facultatea de Electronică și Telecomunicații (LSFETc), o organizație non-guvernamentală ce are ca scop principal reprezentarea studenților din Facultatea de Electronică, Telecomunicații și Tehnologii Informaționale (ETcTI)." />
         <FAQItem question="Ce este ESU?" answer="Electronics Summer University (ESU) este o universitate de vară care se adresează elevilor de clasa a XI-a." />
         <FAQItem question="Ce se întâmplă la ESU?" answer="Timp de două săptămâni, elevii experimentează viața de student din Timișoara. Au parte de cursuri, laboratoare, workshopuri, traininguri, seri sociale și multe altele." />
