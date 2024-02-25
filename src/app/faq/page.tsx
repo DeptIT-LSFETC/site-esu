@@ -6,9 +6,9 @@ function FAQPage() {
   return (
     <div>
       <div className='py-4'>
-        <h1 className='text-7xl text-secondary-500 text-center font-semibold'>Întrebări frecvente</h1>
+        <h1 className='text-7xl text-secondary-500 text-center font-bold'>Întrebări frecvente</h1>
         <hr className='bg-primary-0 m-1 h-1' />
-        <p className='text-xl m-4 text-text-800'>
+        <p className='text-2xl m-4 text-text-600 font-semibold'>
           Aici am adunat întrebările care ne-au fost adresate cel mai des de-a lungul anilor, că să nu mai fi nevoit să întrebi și tu. Dacă totuși ai alte nelămuriri, așteptăm să ne scrii pe
           <a href='https://www.facebook.com/esutimisoara/' className='text-primary-0 font-semibold'> Facebook </a>
           sau
