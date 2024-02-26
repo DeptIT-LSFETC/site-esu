@@ -1,6 +1,6 @@
 import FAQItem from '@/components/FAQItem';
 
-function FAQPage() {
+function FAQ() {
   return (
     <div className='mx-auto md:w-5/6 lg:w-4/6'>
       <div className='py-4'>
@@ -35,4 +35,4 @@ function FAQPage() {
   );
 }
 
-export default FAQPage;
+export default FAQ;
