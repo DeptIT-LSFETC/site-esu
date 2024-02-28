@@ -41,7 +41,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`z-50 fixed top-0 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 ${isHomePage ? navbarBackground : "bg-primary-0"} w-full py-2 lg:items-center lg:flex lg:px-8`}>
+    <div className={`z-50 fixed top-0 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 ${isOpen ? "bg-primary-0" : isHomePage ? navbarBackground : "bg-primary-0"} w-full py-2 lg:items-center lg:flex lg:px-8`}>
       <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
         <Link href="/">
           <Image src={"/assets/logo_esu.svg"} alt={"Electronics Summer University"} width={120} height={0}></Image>
@@ -64,8 +64,7 @@ export default function Navbar() {
           <ul className="h-screen lg:h-auto lg:flex items-center gap-10 text-2xl font-bold lg:font-semibold">
             <Link href="/"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaHouseChimney />Acasa</li></Link>
             <Link href="/faq"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaQuestion />Intrebari Frecvente</li></Link>
-            <Link href="/docs"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoDocumentTextSharp />Documente Necesare</li></Link>
-            <Link href="/contact"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoPersonSharp />Contact</li></Link>
+            <Link href="https://drive.google.com/drive/folders/1VN4MIXLkd-AOC_SDwDRNElhyo9ZC3vfO"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoDocumentTextSharp />Documente Necesare</li></Link>
           </ul>
         </div>
       </div>
