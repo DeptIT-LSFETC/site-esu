@@ -9,6 +9,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col md:flex-row font-semibold justify-between px-20 bg-primary-0 h-fit w-full drop-shadow-sm bottom-0 py-8">
       <div>
+        <h1 className="text-sm md:text-md lg:text-xl text-accent-100">Follow us:</h1>
         <Link href="https://www.instagram.com/esu.lsfetc/"><div className={button}><AiFillInstagram />Instagram</div></Link>
         <Link href="https://www.facebook.com/esutimisoara/"><div className={button}><FaFacebook />Facebook</div></Link>
         <Link href="https://www.tiktok.com/@lsfetc.timisoara"><div className={button}><FaTiktok />TikTok</div></Link>
