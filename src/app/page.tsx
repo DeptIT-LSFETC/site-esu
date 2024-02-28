@@ -2,6 +2,7 @@ import QuestionBox from "@/components/QuestionBox";
 import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import Statistics from "@/components/Countdown";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
               <h1>Te conecteaza cu viitorul tau!</h1>
             </div>
             <Link scroll={true} href="#main">
-              <div className="absolute text-primary-200 transform top-3/4 -translate-x-1/2 -translate-y-1/2 text-9xl">
+              <div className="absolute text-primary-200 transform top-[80%] md:top-[85%] -translate-x-1/2 -translate-y-1/2 text-9xl">
                 <MdOutlineKeyboardDoubleArrowDown className="animate-[bounce_2s_ease-in_infinite]" />
               </div>
             </Link>
@@ -51,6 +52,7 @@ export default function Home() {
           </div>
           <Image src={"/assets/ghiozdaneESUjpg.jpg"} alt={"ghiozdaneESU"} width={600} height={400} className="rounded-xl hidden md:block"></Image>
         </div>
+        <Statistics></Statistics>
         <div className="grid grid-cols-1 lg:grid-cols-2 md:w-3/4 md:mx-auto">
           <QuestionBox question="Când?" answer="Ediția de anul acesta se va desfășura în perioada 21 august – 3 septembrie." />
           <QuestionBox question="Unde?" answer="La Timișoara." />
