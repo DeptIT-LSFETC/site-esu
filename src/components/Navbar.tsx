@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbarBackground, setNavbarBackground] = useState("transparent");
+  const [navbarBackground, setNavbarBackground] = useState("bg-transparent");
 
   const path = usePathname();
   const isHomePage = path === '/';
@@ -41,7 +41,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className={`z-10 sticky top-0 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 ${isHomePage ? navbarBackground : "bg-primary-0"} w-full py-2 lg:items-center lg:flex lg:px-8`}>
+    <div className={`z-50 fixed top-0 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 ${isHomePage ? navbarBackground : "bg-primary-0"} w-full py-2 lg:items-center lg:flex lg:px-8`}>
       <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
         <Link href="/">
           <Image src={"/assets/logo_esu.svg"} alt={"Electronics Summer University"} width={120} height={0}></Image>
