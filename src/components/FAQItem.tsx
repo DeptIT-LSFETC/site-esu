@@ -18,10 +18,10 @@ export const FAQItem = (props: FAQItemProps) => {
     <div className='select-none border-secondary-300 rounded-lg p-4 border-2 m-4 transition-all' onClick={handleToggle}>
       <div className='grid grid-cols-10 gap-2 items-center'>
         <h2 className='col-span-9 text-primary-0 text-lg md:text-3xl font-semibold'>{props.question}</h2>
-        <FaPlus className={`order-first md:order-last justify-self-center text-primary-0 text-xl md:text-4xl transition-transform ${isOpen ? 'rotate-45' : ''}`} />
+        <FaPlus className={`order-first md:order-last justify-self-center text-primary-0 text-xl md:text-4xl transition-all duration-200 ${isOpen ? 'rotate-45' : ''}`} />
       </div>
       <p
-        className={`text-accent-500 text-xl duration-200 ease-in transition-all opacity-0 delay-200 ${isOpen ? 'opacity-100 block' : 'hidden'}`}
+        className={`text-accent-500 text-xl duration-200 ease-in transition-all delay-200 ${isOpen ? 'block' : 'hidden'}`}
       >
         {props.answer}
       </p>
