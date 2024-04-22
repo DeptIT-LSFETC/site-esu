@@ -24,7 +24,7 @@ const Slider = ({ images }: SliderProps) => {
         <div className="flex">
           {images.map((image, index) => (
             <div key={index} className="flex-none w-full md:w-1/2 lg:w-1/3 xl:2-1/4 mx-4">
-              <Image
+              <img
                 src={image}
                 alt={`Image ${index}`}
                 className="w-full h-auto"
