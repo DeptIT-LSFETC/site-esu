@@ -19,8 +19,13 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth" lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        <div className="fixed top-0 w-full z-50 bg-white">
+          <Navbar />
+        </div>
+        <div className="pt-[89px] md:pt-[96px]">
+          {/* Add padding-top to avoid overlap from fixed navbar */}
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

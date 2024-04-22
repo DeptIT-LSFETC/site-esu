@@ -15,7 +15,7 @@ export default function Navbar() {
   const button = "flex justify-center items-center gap-1 select-none cursor-pointer rounded-lg px-1 py-2 ease-in-out duration-150 text-accent-100 hover:scale-105 hover:bg-accent-400 hover:text-secondary-50 active:scale-95";
 
   return (
-    <div className={`h-full lg:h-24 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 ${isOpen ? "bg-primary-0" : "bg-primary-0"} w-full py-2 lg:items-center lg:flex lg:px-8`}>
+    <div className={`h-full lg:h-24 transition-colors ease-in-out duration-300 justify-between text-secondary-100 px-10 bg-primary-0 w-full py-2 lg:items-center lg:flex lg:px-8`}>
       <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
         <Link href="/">
           <Image src={"/assets/logo_esu.svg"} alt={"Electronics Summer University"} width={120} height={0}></Image>
