@@ -17,32 +17,28 @@ export default function Home() {
     "/assets/editia2023.jpg",
   ];
 
-  const testimonials_2022 = [
-    "/assets/testimoniale/editia2022/alex_daianu.jpg",
-    "/assets/testimoniale/editia2022/alex_iordache.jpg",
-    "/assets/testimoniale/editia2022/alexandru_micle.jpg",
-    "/assets/testimoniale/editia2022/alexandru_tega.jpg",
-    "/assets/testimoniale/editia2022/anamaria_burta.jpg",
-    "/assets/testimoniale/editia2022/andreea_caisim.jpg",
-    "/assets/testimoniale/editia2022/andrei_aldulescu.jpg",
-    "/assets/testimoniale/editia2022/andrei_stoica.jpg",
-    "/assets/testimoniale/editia2022/antonio_butnariu.jpg",
-    "/assets/testimoniale/editia2022/antonio_sachelaru.jpg",
-    "/assets/testimoniale/editia2022/bianca_bardan.jpg",
-    "/assets/testimoniale/editia2022/cristi_gruia.jpg",
-    "/assets/testimoniale/editia2022/dana_ciritel.jpg",
-    "/assets/testimoniale/editia2022/diana_dumitriu.jpg",
-    "/assets/testimoniale/editia2022/dragos_plesa.jpg",
-    "/assets/testimoniale/editia2022/eduard_malita.jpg",
-    "/assets/testimoniale/editia2022/eduard_predescu.jpg",
-    "/assets/testimoniale/editia2022/ema_marinescu.jpg",
-    "/assets/testimoniale/editia2022/filip_cociubei.jpg",
-    "/assets/testimoniale/editia2022/ioana_mihaescu.jpg",
-    "/assets/testimoniale/editia2022/natanael_ile.jpg",
-    "/assets/testimoniale/editia2022/ramona_serban.jpg",
-    "/assets/testimoniale/editia2022/raul_tamas.jpg",
-    "/assets/testimoniale/editia2022/vlad_capalnasan.jpg",
-    "/assets/testimoniale/editia2022/vlad_mitrea.jpg",
+  const testimonials_2023 = [
+    "/assets/testimoniale/editia2023/1.png",
+    "/assets/testimoniale/editia2023/2.png",
+    "/assets/testimoniale/editia2023/3.png",
+    "/assets/testimoniale/editia2023/4.png",
+    "/assets/testimoniale/editia2023/5.png",
+    "/assets/testimoniale/editia2023/6.png",
+    "/assets/testimoniale/editia2023/7.png",
+    "/assets/testimoniale/editia2023/8.png",
+    "/assets/testimoniale/editia2023/9.png",
+    "/assets/testimoniale/editia2023/10.png",
+    "/assets/testimoniale/editia2023/11.png",
+    "/assets/testimoniale/editia2023/12.png",
+    "/assets/testimoniale/editia2023/13.png",
+    "/assets/testimoniale/editia2023/14.png",
+    "/assets/testimoniale/editia2023/15.png",
+    "/assets/testimoniale/editia2023/16.png",
+    "/assets/testimoniale/editia2023/17.png",
+    "/assets/testimoniale/editia2023/18.png",
+    "/assets/testimoniale/editia2023/19.png",
+    "/assets/testimoniale/editia2023/20.png",
+    "/assets/testimoniale/editia2023/21.png",
   ];
 
   return (
@@ -57,7 +53,7 @@ export default function Home() {
               <h1>Electronics Summer University</h1>
             </div>
             <div className="absolute top-[45%] md:top-[45%] text-lg md:text-2xl lg:text-3xl rounded-xl text-primary-200 bg-primary-700 p-4 md:p-6 lg:p-8 font-semibold">
-              <h1>Te conecteaza cu viitorul tau!</h1>
+              <h1>Te conectează cu viitorul tău!</h1>
             </div>
             <Link scroll={true} href="#main">
               <div className="absolute text-primary-200 transform top-[70%] md:top-[75%] -translate-x-1/2 -translate-y-1/2 text-9xl">
@@ -92,20 +88,20 @@ export default function Home() {
           </div>
           <Image src={"/assets/ghiozdaneESUjpg.jpg"} alt={"ghiozdaneESU"} width={700} height={400} className="rounded-xl hidden lg:block"></Image>
         </div>
-        <div className="py-4">
-          <Statistics />
-        </div>
-        <Slider images={editions} />
-        <h1 className="text-center text-text-800 text-5xl font-bold pt-10">ESU prin ochii foștilor participanți</h1>
-        <div className="py-6">
-          <Slider images={testimonials_2022} />
-        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 md:w-3/4 md:mx-auto">
           <QuestionBox question="Când?" answer="Ediția de anul acesta se va desfășura în perioada 21 august – 3 septembrie." />
           <QuestionBox question="Unde?" answer="La Timișoara." />
           <QuestionBox question="Cât?" answer="Nu există taxă de participare, totul este gratuit." />
           <QuestionBox question="Cine?" answer="Orice elev de clasa a XI-a." />
         </div>
+        <div className="py-4">
+          <Statistics />
+        </div>
+        <div className='flex justify-center'>
+          <Image src='/assets/copac_editii.png' alt="Editii" width={1000} height={1000}/>
+        </div>
+        <h1 className="text-center text-text-800 text-5xl font-bold pt-10 pb-6">ESU prin ochii foștilor participanți</h1>
+        <Slider images={testimonials_2023} />
         <div className="flex flex-col pt-10 mx-auto">
           <p className="text-5xl text-center font-semibold text-primary-700 mb-4">Ghid de înscriere</p>
           <Image src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />

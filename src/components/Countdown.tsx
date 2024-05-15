@@ -42,7 +42,7 @@ const Statistics: FC = () => {
             ))}
           </div>
         </div>
-        <div className="absolute -z-10 rounded-xl top-0 left-0 h-full w-full bg-[url('/assets/grup2.jpg')] bg-[50%_60%] filter blur-sm">
+        <div className="absolute -z-10 rounded-xl top-0 left-0 h-full w-full bg-[url('/assets/grup2.jpg')] bg-[20%_40%] filter blur-sm">
 
         </div>
       </div>
