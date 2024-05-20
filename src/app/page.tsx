@@ -1,3 +1,4 @@
+/* tslint:disable */
 import QuestionBox from "@/components/QuestionBox";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import Slider from "@/components/Slider";
 import ImageGallery from "@/components/ImageGallery";
 
 export default function Home() {
-  const editions = [
+  const editions: string[] = [
     "/assets/2016.png",
     "/assets/2017.png",
     "/assets/2018.png",
@@ -19,7 +20,7 @@ export default function Home() {
     "/assets/2024.png",
   ];
 
-  const testimonials_2023 = [
+  const testimonials_2023: string[] = [
     "/assets/testimoniale/editia2023/1.png",
     "/assets/testimoniale/editia2023/2.png",
     "/assets/testimoniale/editia2023/3.png",
@@ -109,7 +110,7 @@ export default function Home() {
           <Image src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />
         </div>
         <div className="md:mx-auto border-4 border-primary-0">
-          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MMqsJFA1CGU?si=v1mat6Y52Sdd_asc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="1"></iframe>
+          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MMqsJFA1CGU?si=v1mat6Y52Sdd_asc" allowFullScreen={true}></iframe>
         </div>
       </div>
     </div>

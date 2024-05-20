@@ -1,11 +1,16 @@
+/* tslint:disable */
 "use client";
 import { useState } from 'react';
 import { IoIosCloseCircle } from "react-icons/io";
 
-const ImageGallery = ({ imagePaths }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
+interface ImageGalleryProps {
+  imagePaths: string[];
+}
 
-  const handleImageClick = (imagePath) => {
+const ImageGallery = ({ imagePaths}: ImageGalleryProps ) => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleImageClick = (imagePath: string) => {
     setSelectedImage(imagePath);
   };
 
