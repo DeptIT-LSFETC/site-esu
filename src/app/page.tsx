@@ -44,6 +44,40 @@ export default function Home() {
     "/assets/testimoniale/editia2023/21.png",
   ];
 
+  const testimonials_2023_voluntari: string[] = [
+    "/assets/testimoniale/voluntari2023/1.png",
+    "/assets/testimoniale/voluntari2023/2.png",
+    "/assets/testimoniale/voluntari2023/3.png",
+    "/assets/testimoniale/voluntari2023/4.png",
+    "/assets/testimoniale/voluntari2023/5.png",
+    "/assets/testimoniale/voluntari2023/6.png",
+    "/assets/testimoniale/voluntari2023/7.png",
+    "/assets/testimoniale/voluntari2023/8.png",
+    "/assets/testimoniale/voluntari2023/9.png",
+    "/assets/testimoniale/voluntari2023/10.png",
+    "/assets/testimoniale/voluntari2023/11.png",
+    "/assets/testimoniale/voluntari2023/12.png",
+    "/assets/testimoniale/voluntari2023/13.png",
+    "/assets/testimoniale/voluntari2023/14.png",
+    "/assets/testimoniale/voluntari2023/15.png",
+    "/assets/testimoniale/voluntari2023/16.png",
+    "/assets/testimoniale/voluntari2023/17.png",
+    "/assets/testimoniale/voluntari2023/18.png",
+    "/assets/testimoniale/voluntari2023/19.png",
+    "/assets/testimoniale/voluntari2023/20.png",
+    "/assets/testimoniale/voluntari2023/21.png",
+    "/assets/testimoniale/voluntari2023/22.png",
+    "/assets/testimoniale/voluntari2023/23.png",
+    "/assets/testimoniale/voluntari2023/24.png",
+    "/assets/testimoniale/voluntari2023/25.png",
+    "/assets/testimoniale/voluntari2023/26.png",
+    "/assets/testimoniale/voluntari2023/27.png",
+    "/assets/testimoniale/voluntari2023/28.png",
+    "/assets/testimoniale/voluntari2023/29.png",
+    "/assets/testimoniale/voluntari2023/30.png",
+    "/assets/testimoniale/voluntari2023/31.png",
+  ]
+
   return (
     <div>
       <section className="left-0 w-full min-h-screen md:h-screen flex md:block flex-col justify-center top-0">
@@ -102,15 +136,19 @@ export default function Home() {
         <Statistics />
       </div>
       <div className="flex flex-col m-4 md:w-3/4 md:mx-auto">
+        <h1 className="text-center text-primary-700 text-5xl font-bold pt-10 pb-6">Edițiile anterioare</h1>
         <ImageGallery imagePaths={editions} />
-        <h1 className="text-center text-text-800 text-5xl font-bold pt-10 pb-6">ESU prin ochii foștilor participanți</h1>
+        <h1 className="text-center text-primary-700 text-5xl font-bold pt-10 pb-6">ESU prin ochii foștilor participanți</h1>
         <Slider images={testimonials_2023} />
+        <h1 className="text-center text-primary-700 text-5xl font-bold pt-10 pb-6">ESU prin ochii foștilor voluntari</h1>
+        <Slider images={testimonials_2023_voluntari} />
         <div className="flex flex-col pt-10 mx-auto">
           <p className="text-5xl text-center font-semibold text-primary-700 mb-4">Ghid de înscriere</p>
           <Image src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />
         </div>
-        <div className="md:mx-auto border-4 border-primary-0">
-          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MMqsJFA1CGU?si=v1mat6Y52Sdd_asc" allowFullScreen={true}></iframe>
+        <h1 className="text-center text-primary-700 text-5xl font-bold pt-10 pb-6">Preview ESU</h1>
+        <div className="w-full lg:w-3/4 h-[24rem] rounded-2xl lg:h-[36rem] md:mx-auto border-4 border-primary-0">
+          <iframe className="w-full h-full rounded-xl" src="https://www.youtube.com/embed/MMqsJFA1CGU?si=v1mat6Y52Sdd_asc" allowFullScreen={true}></iframe>
         </div>
       </div>
     </div>

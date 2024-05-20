@@ -35,8 +35,8 @@ const ImageGallery = ({ imagePaths}: ImageGalleryProps ) => {
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50" onClick={handleCloseClick}>
           <div className="relative text-center">
-            <IoIosCloseCircle className="absolute top-28 -right-8 text-white text-4xl transform duration-200 hover:text-primary-0 hover:scale-105 focus:scale-95" onClick={handleCloseClick} />
-            <img src={selectedImage} alt="Selected" className="max-w-90vw max-h-90vh" />
+            <IoIosCloseCircle className="absolute -top-8 -right-8 text-white text-4xl transform duration-200 hover:text-primary-0 hover:scale-125 focus:scale-95" onClick={handleCloseClick} />
+            <img src={selectedImage} alt="Selected" className="max-w-90vw max-h-90vh border-2 border-black" />
           </div>
         </div>
       )}
