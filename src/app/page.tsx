@@ -4,17 +4,19 @@ import Link from "next/link";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import Statistics from "@/components/Countdown";
 import Slider from "@/components/Slider";
+import ImageGallery from "@/components/ImageGallery";
 
 export default function Home() {
   const editions = [
-    "/assets/editia2016.jpg",
-    "/assets/editia2017.jpg",
-    "/assets/editia2018.jpg",
-    "/assets/editia2019.jpg",
-    "/assets/editia2020.jpg",
-    "/assets/editia2021.jpg",
-    "/assets/editia2022.jpg",
-    "/assets/editia2023.jpg",
+    "/assets/2016.png",
+    "/assets/2017.png",
+    "/assets/2018.png",
+    "/assets/2019.png",
+    "/assets/2020.png",
+    "/assets/2021.png",
+    "/assets/2022.png",
+    "/assets/2023.png",
+    "/assets/2024.png",
   ];
 
   const testimonials_2023 = [
@@ -94,19 +96,22 @@ export default function Home() {
           <QuestionBox question="Cât?" answer="Nu există taxă de participare, totul este gratuit." />
           <QuestionBox question="Cine?" answer="Orice elev de clasa a XI-a." />
         </div>
-        <div className="py-4">
-          <Statistics />
-        </div>
-        <div className='flex justify-center'>
-          <Image src='/assets/copac_editii.png' alt="Editii" width={1000} height={1000}/>
-        </div>
+      </main>
+      <div className="py-4 left-0 right-0">
+        <Statistics />
+      </div>
+      <div className="flex flex-col m-4 md:w-3/4 md:mx-auto">
+        <ImageGallery imagePaths={editions} />
         <h1 className="text-center text-text-800 text-5xl font-bold pt-10 pb-6">ESU prin ochii foștilor participanți</h1>
         <Slider images={testimonials_2023} />
         <div className="flex flex-col pt-10 mx-auto">
           <p className="text-5xl text-center font-semibold text-primary-700 mb-4">Ghid de înscriere</p>
           <Image src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />
         </div>
-      </main>
+        <div className="md:mx-auto border-4 border-primary-0">
+          <iframe width="1000" height="600" src="https://www.youtube.com/embed/MMqsJFA1CGU?si=v1mat6Y52Sdd_asc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="1"></iframe>
+        </div>
+      </div>
     </div>
   );
 }

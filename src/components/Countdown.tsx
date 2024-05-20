@@ -28,12 +28,12 @@ const Statistics: FC = () => {
 
   return (
     <VisibilitySensor onChange={handleVisibilityChange} partialVisibility={true}>
-      <div className="relative rounded-xl py-10 border-2 border-gray-300">
+      <div className="relative py-10">
         <div className='z-0'>
           <h2 className="text-center text-text-100 text-5xl pb-5 font-semibold">ESU în numere</h2>
           <div className="flex flex-col lg:flex-row w-full justify-around gap-4 px-10">
             {statisticsData.map((stat, index) => (
-              <div key={index} className="text-center rounded-xl p-4 font-bold drop-shadow-md min-w-[20%] min-h-32 flex flex-col justify-center items-center">
+              <div key={index} className="text-center p-4 font-bold min-w-[20%] min-h-64 flex flex-col justify-center items-center">
                 <div className="text-4xl text-text-50 font-semibold">
                   <CountUp end={isVisible ? stat.value : 0} duration={4} />
                 </div>
@@ -42,7 +42,7 @@ const Statistics: FC = () => {
             ))}
           </div>
         </div>
-        <div className="absolute -z-10 rounded-xl top-0 left-0 h-full w-full bg-[url('/assets/grup2.jpg')] bg-[20%_40%] filter blur-sm">
+        <div className="absolute -z-10 top-0 left-0 h-full w-full bg-[url('/assets/grup2.jpg')] bg-[20%_40%] filter blur-sm">
 
         </div>
       </div>
