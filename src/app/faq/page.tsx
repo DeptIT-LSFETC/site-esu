@@ -2,7 +2,7 @@ import FAQItem from '@/components/FAQItem';
 
 function FAQ() {
   return (
-    <div className='mx-auto md:w-5/6 lg:w-4/6'>
+    <div className='pt-2 mx-auto md:w-5/6 lg:w-4/6'>
       <div className='py-4'>
         <h1 className='text-7xl text-secondary-500 text-center font-bold'>Întrebări frecvente</h1>
         <hr className='bg-primary-0 m-1 h-1' />
