@@ -20,7 +20,7 @@ function FAQ() {
         <FAQItem question="Ce se întâmplă la ESU?" answer="Timp de două săptămâni, elevii experimentează viața de student din Timișoara. Au parte de cursuri, laboratoare, workshopuri, traininguri, seri sociale și multe altele." />
         <FAQItem question="Care este scopul proiectului?" answer="Pregătirea elevilor pentru mediul universitar, familiarizarea acestora cu mediul social și cultural din Timișoara și reducerea abandonului universitar." />
         <FAQItem question="Când se desfășoară caravana?" answer="În perioada 11 martie – 24 mai." />
-        <FAQItem question="Când se desfășoară înscrierea?" answer="În perioada 3 iunie – 30 iunie." />
+        <FAQItem question="Când se desfășoară înscrierea?" answer="În perioada 27 mai – 30 iunie." />
         <FAQItem question="Când se desfășoară proiectul?" answer="În perioada 21 august – 3 septembrie." />
         <FAQItem question="Unde se desfășoară proiectul?" answer="În Timișoara." />
         <FAQItem question="Cine se poate înscrie?" answer="Orice elev de clasa a XI-a." />
