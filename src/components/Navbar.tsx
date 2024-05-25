@@ -41,7 +41,7 @@ export default function Navbar() {
             <Link href="/"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaHouseChimney />Acasă</li></Link>
             <Link href="/faq"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaQuestion />Întrebări Frecvente</li></Link>
             <Link href="https://drive.google.com/drive/folders/1aqPhAj7HNKV-E920wZaXoWYaDla9DmSn?usp=sharing"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoDocumentTextSharp />Documente Necesare</li></Link>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdffgisiWWGjovWJkyMwQ6OfBW8LeD_ULTUstw1fpmeLbRCNQ/viewform?usp=sf_link"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaLink />Preînscriere</li></Link>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdffgisiWWGjovWJkyMwQ6OfBW8LeD_ULTUstw1fpmeLbRCNQ/viewform?usp=sf_link"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaLink />ÎNSCRIE-TE ACUM</li></Link>
           </ul>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Slider = ({ images }: SliderProps) => {
   const scrollNext = useCallback(() => { if (emblaApi) emblaApi.scrollNext() }, [emblaApi])
 
   return (
-    <div className="relative bg-gray-900 p-8 rounded-xl">
+    <div className="relative bg-[#4d4d4d] p-8 rounded-xl">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {images.map((image, index) => (

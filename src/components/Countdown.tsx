@@ -15,9 +15,9 @@ const Statistics: FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   const statisticsData: Statistic[] = [
-    { label: 'de participanți', value: 395 },
-    { label: 'licee', value: 37 },
-    { label: 'ediții', value: 7 },
+    { label: 'de participanți', value: 476 },
+    { label: 'licee', value: 70 },
+    { label: 'ediții', value: 8 },
     { label: 'premii câștigate', value: 3 },
     { label: '% participanți mulțumiți', value: 100 },
   ];
