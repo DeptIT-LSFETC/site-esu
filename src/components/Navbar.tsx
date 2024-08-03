@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link href="/"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaHouseChimney />Acasă</li></Link>
             <Link href="/faq"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaQuestion />Întrebări Frecvente</li></Link>
             <Link href="https://drive.google.com/drive/folders/1UpYspJAJFqQIEUvh2BtQeHeCX1yhCjkh?usp=sharing"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoDocumentTextSharp />Documente Necesare</li></Link>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdffgisiWWGjovWJkyMwQ6OfBW8LeD_ULTUstw1fpmeLbRCNQ/viewform?usp=sf_link"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaLink />ÎNSCRIE-TE ACUM</li></Link>
+            <Link href="/list"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaLink />Listă înscriși</li></Link>
           </ul>
         </div>
       </div>

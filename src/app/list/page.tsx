@@ -1,0 +1,98 @@
+import NameList from '@/components/NameList';
+
+const namePairs = [
+['Achiriloaiei','Ioan-Bogdan'],
+['Aldulescu','Dragos Mihai'],
+['Alupoaicei','Constantin-Sebastian'],
+['Avram','Traian'],
+['Bachmayer','Lavinia'],
+['Bancă','Sebastian'],
+['Blejan','Iulian Alexandru'],
+['Brebenică','Denisa Sorina'],
+['Burmann','Iosif-Alfredo'],
+['Bălăceanu','Bianca-Nicoleta'],
+['Calapareanu','Ionut David'],
+['Cenușe','Darius Bogdan'],
+['Chiliban','Andreea'],
+['Chircă','Alexandru-Constantin'],
+['Chirita','Mircea-Florin'],
+['Craiu','Eric Andrei'],
+['Cristea','Șerban'],
+['Culcer','Bogdan-Mihai'],
+['Călugăru','Elena'],
+['Cărăbaș','Rebeca Lavinia'],
+['Dancea','Alexandru'],
+['Daria','Cascu'],
+['Dascălu','Andreea-Tinca'],
+['Diana-Mihaela','Danciu-Măcicăşan'],
+['Dinu','Andreea Iulia'],
+['Dita','Bianca'],
+['Dobrică','Bianca Ștefania'],
+['Dreghici','Dragoș'],
+['Filip','Lavinia'],
+['Fodor','Andreea-Denisa'],
+['Fratutu','Darius Ionut'],
+['Gherga','Nicolas-Cristian'],
+['Gherghişan','Ana-Maria'],
+['Giosu','Andreea Florentina'],
+['Gogan','Stefan'],
+['Gogan','Teo'],
+['Hoarcă-Codrea','Dana-Maria'],
+['Iacobici','Iasmina-Elena-Maria'],
+['Iordaiche','Simona-Gabriela'],
+['Ispas','Andrei'],
+['Kercsov','Peter-Maximilian'],
+['Laieș','Ana-Maria'],
+['Lorincz','Lucas'],
+['Luca','Daniel Adrian'],
+['Lucacela','Zoran'],
+['Lungu','Carol'],
+['Matei','Sandu'],
+['Mezinca','Gheorghe-Ion'],
+['Mihai','Anda Maria'],
+['Mihart','Bianca Ana-Maria'],
+['Milotin','Mathias'],
+['Mitrescu','Fabian Ionuț'],
+['Mora', 'Andrei Bogdan'],
+['Morhan','Radu-Cristian'],
+['Muia','Alexandru'],
+['Murgoi','Alexandru Florin'],
+['Mărgăian-Ivanițchi','David-Natanael'],
+['Nechifor','Stefan'],
+['Ochian','Ion-Ovidiu'],
+['Ogrin','Bogdan Andrei'],
+['Pașca','Nicolae'],
+['Pașolea','Darius'],
+['Plesoianu','Tudor'],
+['Preda','Petrică Oliver'],
+['Pătru','Delia'],
+['Raiescu','Ionuț-Marian'],
+['Ranga','Razvan Giani Stefan'],
+['Ristea','Bianca-Andreea'],
+['Sandu','Natalia Maria'],
+['Stoian','Maria'],
+['Surdu','Alexandru Gabriel'],
+['Toma','Daria'],
+['Tudori','Fabian Antonio Darco'],
+['Tănase','Laura Denisa'],
+['Tănăsescu','Vlad-Constantin'],
+['Udrescu','Andreea-Iuliana'],
+['Ungureanu','Ana-Maria Nastasia'],
+['Vilceanu Balescu','Darius Rafael'],
+['Visan','Loredana'],
+['Vlaicu','Eduard'],
+];
+
+function FAQ() {
+  return (
+    <div className='pt-2 mx-auto md:w-5/6 lg:w-4/6'>
+      <div className='py-4'>
+        <h1 className='text-7xl text-secondary-500 text-center font-bold'>Listă înscriși</h1>
+        <hr className='bg-primary-0 m-1 h-1' />
+        <NameList names={namePairs} />
+      </div>
+    </div>
+  );
+}
+
+export default FAQ;

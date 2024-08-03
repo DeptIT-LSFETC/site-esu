@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div>
         <Link href="tel:0735149076"><div className={button}><FaPhone />Coordonator ESU<p className="hidden md:block">: 0735 149 076</p></div></Link>
-        <Link href="tel:0771494186"><div className={button}><FaPhone />Presedinte LSFETc<p className="hidden md:block">: 0771 494 186</p></div></Link>
+        <Link href="tel:0721392268"><div className={button}><FaPhone />Presedinte LSFETc<p className="hidden md:block">: 0771 494 186</p></div></Link>
         <Link href="mailto:esu@lsfetc.ro"><div className={button}><MdEmail />esu@lsfetc.ro</div></Link>
         <Link href="https://maps.app.goo.gl/pU34Q14pZwT1UMRq5"><div className={button}><FaLocationPin />Sediul LSFETc</div></Link>
       </div>
