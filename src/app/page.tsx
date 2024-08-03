@@ -1,6 +1,5 @@
 /* tslint:disable */
 import QuestionBox from "@/components/QuestionBox";
-import Image from "next/image";
 import Link from "next/link";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import Statistics from "@/components/Countdown";
@@ -83,7 +82,7 @@ export default function Home() {
       <section className="left-0 w-full min-h-screen md:h-screen flex md:block flex-col justify-center top-0">
         <div className="relative">
           <div className="bg-primary-0">
-            <Image className="object-cover h-screen w-screen opacity-40" src='/assets/hero.jpg' alt="Hero Photo" width={2048} height={2048} />
+            <img className="object-cover h-screen w-screen opacity-40" src='/assets/hero.jpg' alt="Hero Photo" width={2048} height={2048} />
           </div>
           <div className="w-full flex items-center justify-center z-40">
             <div className="absolute top-[20%] text-5xl lg:text-7xl text-primary-100 text-center font-bold w-3/4">
@@ -123,7 +122,7 @@ export default function Home() {
               dându-le o direcție mai clară a parcursului educațional pe care vor să îl urmeze.
             </p>
           </div>
-          <Image src={"/assets/ghiozdaneESUjpg.jpg"} alt={"ghiozdaneESU"} width={700} height={400} className="rounded-xl hidden lg:block"></Image>
+          <img src={"/assets/ghiozdaneESUjpg.jpg"} alt={"ghiozdaneESU"} width={700} height={400} className="rounded-xl hidden lg:block"></img>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 md:w-3/4 md:mx-auto">
           <QuestionBox question="Când?" answer="Ediția de anul acesta se va desfășura în perioada 21 august – 3 septembrie." />
@@ -144,7 +143,7 @@ export default function Home() {
         <Slider images={testimonials_2023_voluntari} />
         <div className="flex flex-col pt-10 mx-auto">
           <p className="text-5xl text-center font-semibold text-primary-700 mb-4">Ghid de înscriere</p>
-          <Image src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />
+          <img src={"/assets/guide.png"} alt={"ghiddeinscriere"} width={600} height={600} />
         </div>
         <h1 className="text-center text-primary-700 text-5xl font-bold pt-10 pb-6">Preview ESU</h1>
         <div className="w-full lg:w-3/4 h-[24rem] rounded-2xl lg:h-[36rem] md:mx-auto border-4 border-primary-0">
