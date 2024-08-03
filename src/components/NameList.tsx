@@ -1,4 +1,8 @@
-const NameList = ({ names }) => {
+interface NameListProps {
+  names: string[][];
+}
+
+const NameList: React.FC<NameListProps> = ({ names }) => {
   return (
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 gap-2">

@@ -5,8 +5,9 @@ import { IoDocumentTextSharp } from "react-icons/io5";
 import { IoPersonSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaQuestion } from "react-icons/fa";
+import { FaList } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import { FaLink } from "react-icons/fa";
+//import { FaLink } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
             <Link href="/"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaHouseChimney />Acasă</li></Link>
             <Link href="/faq"><li className={button} onClick={() => setIsOpen(!isOpen)}><FaQuestion />Întrebări Frecvente</li></Link>
             <Link href="https://drive.google.com/drive/folders/1UpYspJAJFqQIEUvh2BtQeHeCX1yhCjkh?usp=sharing"><li className={button} onClick={() => setIsOpen(!isOpen)}><IoDocumentTextSharp />Documente Necesare</li></Link>
-            <Link href="/list"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaLink />Listă înscriși</li></Link>
+            <Link href="/list"><li className={button_alt} onClick={() => setIsOpen(!isOpen)}><FaList />Listă înscriși</li></Link>
           </ul>
         </div>
       </div>
